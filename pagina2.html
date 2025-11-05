@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - Mi Tienda Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @keyframes titulo-animacion {
+            from { color: red; }
+            to { color: blue; }
+        }
+        
+        h1, h2 {
+            animation: titulo-animacion 2s infinite alternate;
+        }
+        
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .boton {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .boton:hover {
+            background-color: #005f7a;
+            transform: scale(1.1);
+        }
+        
+        .contenedor {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 70vh;
+        }
+        
+        .empleado {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .imagen-empleado {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            transition: all 0.5s;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .imagen-empleado:hover {
+            transform: rotate(5deg);
+            border-color: red;
+        }
+        
+        .info-empleado {
+            flex: 1;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .empleado {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .imagen-empleado {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestro Equipo</h1>
+        <p>Conoce a las personas detrás de nuestra tienda</p>
+    </header>
+    
+    <nav>
+        <a href="index.html" class="boton">Inicio</a>
+        <a href="pagina1.html" class="boton">Productos</a>
+        <a href="pagina2.html" class="boton">Nuestro Equipo</a>
+    </nav>
+    
+    <div class="contenedor">
+        <h2>Miembros del Equipo</h2>
+        <p>Estas son las personas que hacen posible nuestra tienda:</p>
+        
+        <div class="empleado">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Carlos Rodríguez" class="imagen-empleado">
+            <div class="info-empleado">
+                <h3>Carlos Rodríguez</h3>
+                <p><strong>Gerente General</strong></p>
+                <p>Carlos es el fundador de la tienda y tiene más de 10 años de experiencia en el sector. Se encarga de la gestión general y la estrategia de la empresa.</p>
+            </div>
+        </div>
+        
+        <div class="empleado">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="María González" class="imagen-empleado">
+            <div class="info-empleado">
+                <h3>María González</h3>
+                <p><strong>Jefa de Ventas</strong></p>
+                <p>María se encarga de gestionar todas las ventas y atender a nuestros clientes. Su experiencia en atención al cliente garantiza la mejor experiencia de compra.</p>
+            </div>
+        </div>
+        
+        <div class="empleado">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Roberto Silva" class="imagen-empleado">
+            <div class="info-empleado">
+                <h3>Roberto Silva</h3>
+                <p><strong>Técnico Especialista</strong></p>
+                <p>Roberto es nuestro experto en tecnología y se encarga del soporte técnico. Con más de 8 años de experiencia, garantiza el funcionamiento óptimo de todos nuestros productos.</p>
+            </div>
+        </div>
+        
+        <div class="empleado">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Laura Méndez" class="imagen-empleado">
+            <div class="info-empleado">
+                <h3>Laura Méndez</h3>
+                <p><strong>Especialista en Marketing</strong></p>
+                <p>Laura dirige nuestras estrategias de marketing digital y comunicación. Su creatividad ayuda a conectar con nuestros clientes de manera efectiva.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="boton">Volver al Inicio</a>
+            <a href="pagina1.html" class="boton">Ver Productos</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Mi Tienda Online - Desarrollado por Daysi Britos</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
